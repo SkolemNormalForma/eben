@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import ReactFullpage from '@fullpage/react-fullpage';
+import Home from './pages/home';
+import Concerts from './pages/concerts';
+import About from './pages/about';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import './index.css';
+
+const Fullpage = () => (
+  <ReactFullpage
+    //fullpage options
+    scrollingSpeed = {1000} /* Options here */
+
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+          <div className="section">
+            <Home></Home>
+          </div>
+
+          <div className="section">
+            <About></About>
+          </div>
+
+          <div className="section">
+            <Concerts></Concerts>
+          </div>
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Fullpage />, document.getElementById('root'));
