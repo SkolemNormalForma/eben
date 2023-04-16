@@ -6289,7 +6289,7 @@ a.close.disabled {
 .toast-body {
   padding: 0.75rem;
 }
-
+/* 
 .modal-open {
   overflow: hidden;
 }
@@ -6548,7 +6548,7 @@ a.close.disabled {
   .modal-xl {
     max-width: 1140px;
   }
-}
+} */
 
 .tooltip {
   position: absolute;
@@ -11421,7 +11421,8 @@ textarea.form-control {
 .header {
   position: relative;
   height: 100vh;
-  min-height: 500px;
+  /* min-height: 00px; */
+  max-width: 100%;
   background: url(./images/csoport2.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
@@ -11543,7 +11544,7 @@ textarea.form-control {
 }
 
 .section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
 }
 
 .section:nth-child(even) {
@@ -11648,13 +11649,13 @@ textarea.form-control {
   border: 2px solid #dee2e6;
   border-radius: 100px;
   padding: 2px;
-  margin: 0 auto 20px;
-  max-width: 400px;
+  margin: 0 auto 10px;
+  max-width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
+  /* -webkit-box-pack: justify; */
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -11665,10 +11666,10 @@ textarea.form-control {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
   color: #444;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  opacity: .7;
-  padding: 8px 14px;
+  opacity: .9;
+  padding: 8px 3%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -11699,6 +11700,18 @@ textarea.form-control {
   margin: 10px -5px;
   overflow: hidden;
   border-radius: 0;
+}
+
+.portfolio-section .portfolio-container .portfolio-item img {
+  display:block;
+  margin:auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .portfolio-section .portfolio-container .portfolio-item .content-holder {
@@ -11747,4 +11760,382 @@ textarea.form-control {
   left: 50%;
   opacity: 1;
   visibility: visible;
+}
+
+.video-wrapper video {
+  object-fit: fill;
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index:0;
+  filter:opacity(40%);
+}
+
+.video-wrapper {
+
+  position: relative; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  width: 70vh; 
+  height: 70vh;
+  /* z-index: -100; */
+  /* background-size: cover; */
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid #000;
+  width: 90vh;
+  height: 70vh;
+  position: relative;
+  overflow: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width: 35%;
+}
+
+time.icon
+{
+  font-size: 0.8em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  border: 1px solid black;
+  /* box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd; */
+  /* overflow: hidden; */
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  /* border-bottom: 1px dashed #f37302; */
+  border-radius: 0.6em;
+  /* box-shadow: 0 2px 0 #fd9f1b; */
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  border-radius: 0.6em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  border-radius: 0.6em;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+.eventBorder {
+	/* font-size: 1.6rem; */
+	/* display: grid; */
+	place-items: center;
+	/* min-height: 200px; */
+	border: 3px solid;
+	padding: 0.6rem;
+}
+
+.gradient1 {
+	border-image: linear-gradient(45deg, brown, coral) 1;
+}
+
+.gradient2 {
+	border-image: linear-gradient(45deg, coral, brown) 1;
+}
+
+.navbarClassWhite {
+  position: fixed;
+  z-index:999;
+  margin-top: 10px;
+  margin-right: 10px;
+  right: 0;
+  top: 0;
+}
+
+.navbarClassWhite a {
+  position: relative;
+  width: 20%;
+  display: table-cell;
+  text-align: center;
+  color: #90919A;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 8px 8px;
+  transition: 0.2s ease color;
+}
+
+.navbarClassWhite a:before,
+.navbarClassWhite a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+.navbarClassWhite a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+.navbarClassWhite a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+.navbarClassWhite a:nth-child(1):before {
+  background-color: yellow;
+}
+
+.navbarClassWhite a:nth-child(1):after {
+  background-color: red;
+}
+
+.navbarClassWhite a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+.navbarClassWhite a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+.navbarClassWhite a:nth-child(3):before {
+  background-color: purple;
+}
+
+.navbarClassWhite a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+.navbarClassWhite a:nth-child(4):before {
+  background-color: cyan;
+}
+
+.navbarClassWhite a:nth-child(4):after {
+  background-color: magenta;
+}
+
+.navbarClassWhite a:nth-child(5):before {
+  background-color: green;
+}
+
+.navbarClassWhite a:nth-child(5):after {
+  background-color: brown;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+.navbarClassWhite a:hover {
+  color: #fff;
+}
+
+.navbarClassWhite a:hover:before,
+.navbarClassWhite a:hover:after {
+  transform: scale(1);
+}
+
+.navbarClassWhite a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+.navbarClassWhite a:nth-child(2):hover ~ #indicator {
+  left: 20%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.navbarClassWhite a:nth-child(3):hover ~ #indicator {
+  left: 40%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.navbarClassWhite a:nth-child(4):hover ~ #indicator {
+  left: 60%;
+  background: linear-gradient(130deg, cyan, magenta);
+}
+
+.navbarClassWhite a:nth-child(5):hover ~ #indicator {
+  left: 80%;
+  background: linear-gradient(130deg, green, brown);
+}
+
+.navbarClassBlack {
+  position: fixed;
+  z-index:999;
+  margin-top: 10px;
+  margin-right: 10px;
+  right: 0;
+  top: 0;
+}
+
+.navbarClassBlack a {
+  position: relative;
+  width: 20%;
+  display: table-cell;
+  text-align: center;
+  color: #524e4e;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 8px 8px;
+  transition: 0.2s ease color;
+}
+
+.navbarClassBlack a:before,
+.navbarClassBlack a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+.navbarClassBlack a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+.navbarClassBlack a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+.navbarClassBlack a:nth-child(1):before {
+  background-color: yellow;
+}
+
+.navbarClassBlack a:nth-child(1):after {
+  background-color: red;
+}
+
+.navbarClassBlack a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+.navbarClassBlack a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+.navbarClassBlack a:nth-child(3):before {
+  background-color: purple;
+}
+
+.navbarClassBlack a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+.navbarClassBlack a:nth-child(4):before {
+  background-color: cyan;
+}
+
+.navbarClassBlack a:nth-child(4):after {
+  background-color: magenta;
+}
+
+.navbarClassBlack a:nth-child(5):before {
+  background-color: green;
+}
+
+.navbarClassBlack a:nth-child(5):after {
+  background-color: brown;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+.navbarClassBlack a:hover {
+  color: #000;
+}
+
+.navbarClassBlack a:hover:before,
+.navbarClassBlack a:hover:after {
+  transform: scale(1);
+}
+
+.navbarClassBlack a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+.navbarClassBlack a:nth-child(2):hover ~ #indicator {
+  left: 20%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.navbarClassBlack a:nth-child(3):hover ~ #indicator {
+  left: 40%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.navbarClassBlack a:nth-child(4):hover ~ #indicator {
+  left: 60%;
+  background: linear-gradient(130deg, cyan, magenta);
+}
+
+.navbarClassBlack a:nth-child(5):hover ~ #indicator {
+  left: 80%;
+  background: linear-gradient(130deg, green, brown);
 }

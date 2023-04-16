@@ -1,25 +1,16 @@
 import React from "react";
-import { Nav, NavLink, NavMenu } 
-    from "./navbarelements";
-  
-const Navbar = () => {
-  return (
-    <>
-      <Nav>
-        <NavMenu>
-          <NavLink to="/" activeStyle>
-            Főoldal
-          </NavLink>
-          <NavLink to="/concerts" activeStyle>
-            Koncertek
-          </NavLink>
-          <NavLink to="/about" activeStyle>
-            Rólunk
-          </NavLink>
-        </NavMenu>
-      </Nav>
-    </>
-  );
+import '../../index.css'
+
+export default class Navbar extends React.Component {
+  render() {
+    return (
+      <div className={this.props.isMainPage ? 'navbarClassWhite' : 'navbarClassBlack'}>
+        <a href="#home">Főoldal</a>
+        <a href="#about">Rólunk</a>
+        <a href="#members">Tagok</a>
+        <a href="#music">Zenénk</a>
+        <a href="#concerts">Események</a>
+      </div>
+    );
+  }
 };
-  
-export default Navbar;

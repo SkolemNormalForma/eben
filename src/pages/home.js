@@ -7,7 +7,6 @@ const Home = () => {
     <header class="header">
         <div class="overlay">
             <h1 class="subtitle">Isten hozott!</h1>
-            {/* <h1 class="title">ében</h1> */}
             <img src={require('../images/logo3.png')}></img>
         </div>  
         <div class="shape">
