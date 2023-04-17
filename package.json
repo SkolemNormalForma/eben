@@ -1,7 +1,7 @@
 {
   "name": "eben",
   "version": "0.1.0",
-  "homepage": "eben.hu",
+  "homepage": "https://eben.hu",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.38",
