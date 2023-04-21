@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3676df2f.css",
+    "main.css": "/static/css/main.b3a62405.css",
     "main.js": "/static/js/main.32a28e53.js",
     "static/media/csoport2.jpg": "/static/media/csoport2.b70f3c57caf45867130a.jpg",
     "static/media/csoport.jpg": "/static/media/csoport.0b7bf932890fc5dff8aa.jpg",
@@ -15,11 +15,11 @@
     "static/media/boritokep.png": "/static/media/boritokep.07ef05cd17155e316784.png",
     "static/media/logo3.png": "/static/media/logo3.a870d7154e68763154f6.png",
     "index.html": "/index.html",
-    "main.3676df2f.css.map": "/static/css/main.3676df2f.css.map",
+    "main.b3a62405.css.map": "/static/css/main.b3a62405.css.map",
     "main.32a28e53.js.map": "/static/js/main.32a28e53.js.map"
   },
   "entrypoints": [
-    "static/css/main.3676df2f.css",
+    "static/css/main.b3a62405.css",
     "static/js/main.32a28e53.js"
   ]
 }
